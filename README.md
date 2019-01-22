@@ -3,6 +3,7 @@
 ## Learning Goals
 
 * Demonstrate `find()`
+* Use `find()` to isolate a specific result
 
 ## Introduction
 
@@ -26,15 +27,33 @@ element for which the function returns true, a single element.
 element_. This could lead to some bugs if you're not careful.
 
 ```js
-let activeStudents = [hermioneGranger, nevilleLongbottom, harryPotter,
-ronWeasley];
+let roommates = ["jess", "winston", "winston", "nick"];
 
-activeStudents.find( s => isPossibleSavior(s) )
-// => nevilleLongbottom
+roommates.find( s => s === "winston" )
+// => winston
 
-activeStudents.filter( s => isPossibleSavior(s) )
-//=> [nevilleLongbottom, harryPotter]
+roommates.filter( s => "winston" )
+//=> [winston, winston]
 ```
+
+## Use `find()` to Isolate a Specific Result
+
+Let's create a function that uses the method `find()` to single out a specific
+result in game record data for the football team Kansas City Chiefs. We want to
+find out if at any point in the team's existence, if they've had a win in the
+Superbowl at _any_ point in time. Our data looks like this:
+
+```js
+const record = {
+  2018: "L",
+  2017: "W",
+  2016: "N/A",
+  //...
+}
+```
+When writing our function, we want to return a year that has a value of `W`,
+indicating that the Kansas City Chiefs have in-fact won a Superbowl game. Run
+the tests using `learn`.
 
 ## Conclusion
 
