@@ -44,12 +44,12 @@ find out if at any point in the team's existence, if they've had a win in the
 Superbowl at _any_ point in time. Our data looks like this:
 
 ```js
-const record = {
-  2018: "L",
-  2017: "W",
-  2016: "N/A",
+const record = [
+  {year: "2018", result: "L"},
+  {year: "2017", result: "W"},
+  {year: "2016", result: "N/A"}
   //...
-}
+]
 ```
 When writing our function, we want to return a year that has a value of `W`,
 indicating that the Kansas City Chiefs have in-fact won a Superbowl game. Run
