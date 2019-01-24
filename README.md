@@ -51,9 +51,9 @@ const record = [
   //...
 ]
 ```
-When writing our function, we want to return a year that has a value of `W`,
-indicating that the Kansas City Chiefs have in-fact won a Superbowl game. Run
-the tests using `learn`.
+When writing our function, we want to return the `year` associated with the
+`result` that has a value of `W`, indicating that the Kansas City Chiefs
+have in-fact won a Superbowl game. Run the tests using `learn`.
 
 ## Conclusion
 
