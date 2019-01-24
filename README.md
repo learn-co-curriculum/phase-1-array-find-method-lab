@@ -4,7 +4,6 @@
 
 * Demonstrate `find()`
 * Use `find()` to isolate a specific result
-* Use `find()` to isolate a specific result
 
 ## Introduction
 
