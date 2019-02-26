@@ -1,1 +1,5 @@
-// Code your solution in this file!
+const testVar = {}
+
+function testFunc() {
+  return "hi"
+}
