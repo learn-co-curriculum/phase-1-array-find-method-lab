@@ -66,5 +66,10 @@ describe('record', function () {
     it('returns a year the KC Chiefs won the superbowl', function () {
       expect(superbowlWin(record)).to.equal('1969');
     });
+
+    it('returns undefined if the record has no win objects', function() {
+      const sadReality = record.map( yObj => Object.assign({}, yObj, { result: "N/A" } ) )
+      expect(superbowlWin(sadReality)).to.equal(undefined)
+    });
   });
 });
