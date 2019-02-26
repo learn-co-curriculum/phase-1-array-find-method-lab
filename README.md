@@ -40,8 +40,8 @@ roommates.filter( s => "winston" )
 
 Let's create a function that uses the method `find()` to single out a specific
 result in game record data for the football team Kansas City Chiefs. We want to
-find out if at any point in the team's existence, if they've had a win in the
-Superbowl at _any_ point in time. Our data looks like this:
+find out if, at _any_ point in the team's existence, they've had a win in the
+Superbowl. Our data looks like this:
 
 ```js
 const record = [
@@ -51,9 +51,16 @@ const record = [
   //...
 ]
 ```
-When writing our function, we want to return the `year` associated with the
-`result` that has a value of `W`, indicating that the Kansas City Chiefs
-have in-fact won a Superbowl game. Run the tests using `learn`.
+
+Write a function called `superbowlWin()` in `index.js` that:
+ * Receives 1 argument, an `Array` of JavaScript `Object`s
+ * Each object has two properties: `year` and `result`
+ * Use `find()` to test each `Object` to see if the `result` is `"W"` &mdash; a
+   win!
+ * `superbowlWin()` should return the `year` when the win occurred (if it
+   occurred at all!). If no win is found, it should return, sadly, `undefined`
+
+Run the tests using `learn`.
 
 ## Conclusion
 
