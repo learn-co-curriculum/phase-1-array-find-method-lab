@@ -20,7 +20,7 @@ that want a truthy/falsey result. `find` returns the **first**
 element for which the function returns true, a single element.
 
 ```js
-[1,3,5,6,8].find( e => e % 2 === 0 )
+[1,3,5,6,8].find(function(e) { return e % 2 === 0 })
 ```
 
 **Note**: You could have multiple matches, but `find` returns _only the first
@@ -29,10 +29,10 @@ element_. This could lead to some bugs if you're not careful.
 ```js
 let roommates = ["jess", "winston", "winston", "nick"];
 
-roommates.find( s => s === "winston" )
-// => winston
+roommates.find( function(s) { return s === "winston" })
+//=> winston
 
-roommates.filter( s => "winston" )
+roommates.filter(function(s) { return s === "winston" })
 //=> [winston, winston]
 ```
 
