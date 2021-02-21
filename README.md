@@ -7,20 +7,19 @@
 ## Introduction
 
 We have learned that the `indexOf()` and `find()` methods can be used to locate
-a single element in an array. In this lab, we'll practice using the `find()`
-method.
+an element in an array, and that they return the **first** element for which the
+condition is met. (If you instead want a list of _all_ elements that meet a
+condition, you would use `Array.prototype.filter()` instead. We'll learn about
+`filter()` in the next lesson.)
 
-> Top Tip: We've learned that the `find()` method takes a _callback function_ as
-> its argument. This is a common pattern for the `Array` methods we'll be
-> learning about in this section. (In fact, `indexOf()` is the only one that
-> _doesn't_ take a callback function as an argument.) `find()` is one of two
-> `Array` methods that expects the callback function to return either `true` or
-> `false` ( `filter()` is the other one).
+We've also learned that the `find()` method takes a _callback function_ as
+its argument. This is a common pattern for the `Array` methods we'll be
+learning about in this section — in fact, `indexOf()` is the only one that
+_doesn't_ take a callback function as an argument. `find()` is one of two
+`Array` methods that expects the callback function to return either `true` or
+`false` (`filter()` is the other one).
 
-Recall that `find` returns the **first** element for which the function returns
-true, a single element. If you want a list of _all_ elements that meet a
-condition, you would use the `Array.prototype.filter()` method instead. We'll
-learn about `filter()` in the next lesson.
+In this lab, we'll practice using the `find()` method.
 
 ## Practice Using `find()` to Isolate a Specific Result
 
@@ -38,14 +37,14 @@ const record = [
 ]
 ```
 
-Write a function called `superbowlWin()` in `index.js` that:
+Write a function called `superbowlWin()` in `index.js`:
 
-* Receives 1 argument, an `Array` of JavaScript `Object`s
+* The function should receive 1 argument, an `Array` of JavaScript `Object`s
 * Each object has two properties: `year` and `result`
-* Use `find()` to test each `Object` to see if the `result` is `"W"` — a
-   win!
-* `superbowlWin()` should return the `year` when the win occurred (if it
-   occurred at all!). If no win is found, it should return, sadly, `undefined`
+* It should use `find()` to test each `Object` to see if the `result` is `"W"` —
+  a win!
+* It should return the `year` when the win occurred (if it occurred at all!)
+* If no win is found, it should return, sadly, `undefined`
 
 ## Conclusion
 
