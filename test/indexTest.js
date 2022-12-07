@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 
 describe('superbowlWin(record)', function () {
   const record = [
